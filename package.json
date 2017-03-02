@@ -11,13 +11,11 @@
     "type": "git",
     "url": "git+https://github.com/carlosvazquez/webpack2.git"
   },
-  "main": "app,js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack -d --watch --progress --colors --display-error-details",
-    "build": "webpack -p --config ./webpack.production.config.js",
-    "serve": "webpack-dev-server --progress --colors"
-  },
+    "prod": "webpack -p --progress --colors --display-error-details"
+   },
   "engineStrict": true,
   "engines": {
     "node": ">= 6.9.1",
@@ -27,11 +25,6 @@
     "url": "https://github.com/carlosvazquez/webpack2/issues"
   },
   "homepage": "https://github.com/carlosvazquez/webpack2#readme",
-  "babel": {
-    "presets": [
-      "es2015"
-    ]
-  },
   "devDependencies": {
     "babel-cli": "^6.23.0",
     "babel-core": "^6.23.1",
@@ -53,8 +46,6 @@
     "webpack-uglify-js-plugin": "^1.1.9"
   },
   "dependencies": {
-    "jquery": "^1.12.4",
-    "slick-carousel": "^1.6.0",
-    "font-awesome": "^4.4.0"
+    "jquery": "^1.12.4"
   }
 }
